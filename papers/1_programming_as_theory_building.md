@@ -44,3 +44,63 @@ El paper quiere presentar la Theory Building View de la programación
 >> nueva teoría y los programadores están familiarizados con la codebase, se debe
 >> considerar el costo adicional de arreglar todos los casos borde y bugs que
 >> habían en el codebase viejo.
+
+## Revisiting Naur’s Programming as Theory Building for Enterprise Architecture Modelling
+
+Le da otra chance a la vista de programacion como theory building a ver si sirve
+para modelar Enterprise Architectures (EAs).
+
+## The limits of correctness (1985)
+
+Qué es un modelo y sus límites.
+
+Se puede probar la correctitud de todos los programas para dormir tranquilo de
+noche y garantizar que no se va a romper nada? **No**. Hay limitaciones
+inherentes de que se puede probar de computadoras y programas de computadoras.
+
+> Just because a program is "proven correct", you cannot be sure that it will do
+> what you intend.
+
+Todo modelo lidia con lo que soluciona en **cierto nivel de abstracción**,
+prestando atención a algunas cosas e ignorando otras, juntando cosas parecidas
+en categorías, etc.
+
+Los modelos son **inherentemente parciales**, no se puede capturar absolutamente
+todos los detalles de lo que se está modelando.
+
+Si bien los modelos son abstractos, las *acciones* no lo son. Hacer una acción
+en el mundo real inevitablemente sale del modelo.
+
+No hay *garantía* de que el modelo sea correcto. No se tienen garantías de nada
+de la relación entre el modelo y el mundo real.
+
+![](img/1/limits-of-correctness_models.png)
+
+La *teoría de modelos* matemática y lógica se centra en la relación de la
+izquierda, de las representaciones, descripciones y programas del modelo hacia
+el modelo, pero no a la de la derecha.
+
+> What about the relationship on the right? The answer, and one of the main
+> points I hope you will take away from this discussion', is that, at this point
+> in intellectual history, we' have no theory of this right-hand side relation-
+> ship.
+>
+>> Pregunta: Como cambió esto desde el 85? Es mejor ahora?
+
+Para demostrar correctitud, uno tiene que armar dos cosas
+
+- Una especificacion: dice *qué* es el comportamiento correcto. Son
+  *decalrativas*
+- Una implementación (o programa): dice *como* hacerlo. Son *procedurales*
+
+  > Siguen siendo procedurales hoy en día?
+
+Una demostración de correctitud entonces dice que todo sistema que corra el
+programa va a satisfacer la especificación.
+
+- Solo dice que dos caracterizaciones formales de algo son compatibles entre sí,
+  pero no en relación al mundo real
+
+## A Philosophical Re-Appraisal of Peter Naur's Notion of "programming as Theory Building" (2007)
+
+No lo lei :)
