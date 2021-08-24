@@ -12,6 +12,26 @@ Papers:
   
 ## Programming as theory building (1985)
 
+### Discusión
+
+Discutido en la clase práctica #2 del 23/08/21
+
+Es uno de los responsables de la notación BNF
+
+Contexto histórico: desarrollo en cascada. Yo diseño el código, se lo paso al
+programador, es taylorista. El programador lo puedo reemplazar rápidamente. Eso
+se venía cayendo a pedazos y hoy en día está bastante diferente.
+
+Principal contraparte a naur: dijkstra, que queria llevar la computacion a algo
+axiomatico.
+
+Lo más importante es construir teorías colectivas.
+
+La parte chocante de destruir y recrear no es así en la práctica, pero naur es
+teórico.
+
+### Yo
+
 El paper quiere presentar la Theory Building View de la programación
 
 - Muestra case studies (compilador y real time sytems) que muestran que con
