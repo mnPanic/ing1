@@ -118,6 +118,23 @@ pero también puede ir más allá y representar
 - Smalltalk no tiene prototipos también? Qué estuvimos haciendo?
 - Por qué está mal hacer que el prototipo defina comportamiento?
 
+### Discusion
+
+Diferencia entre delegacion y forwarding.
+
+Cuando tenemos prototipado, un objeto lo delega a otro objeto sin perder el
+self (se refiere al objeto que recibió el mensaje).
+
+El caso de forwarding, se lo envía a otro objeto y ahí el self (o this) es el
+otro objeto, al que se le envió el mensaje.
+
+JS usa prototipacion. Se le fueron agregando formas de clasificar pero por abajo
+son todos objetos. Tiene como 4 o 5 formas para definir objetos, es un lio.
+
+> está bueno ver como es que se hace la conversión de clases a objetos en JS.
+> Como funciona por debajo. Hay pequeños errores que se pueden cometer al
+> definir clases que tienen que ver con eso.
+
 ## Classes vs. Prototypes (1996)
 
 - En prototipos no hay clases. Nuevos objetos se crean mas directamente
