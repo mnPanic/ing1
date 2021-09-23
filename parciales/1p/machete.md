@@ -25,3 +25,21 @@
 4. Nombrar el nuevo mensaje (aqui se crea una nueva noción)
 5. Reemplazar los if por envío de mensajes polimórficos
 6. (opcional) Buscar el objeto polimórfico.
+
+## Sum y select
+
+```smalltalk
+totalWeight
+
+	^container 
+		sum: [ :portableObject | portableObject weight ]
+		ifEmpty: [ 0 ]
+```
+
+```smalltalk
+totalPoints
+
+	^(container select: [ :portableObject | portableObject doesItAddPoints ])	
+		sum: [ :portableObject | portableObject points ]
+		ifEmpty: [ 0 ]
+```
