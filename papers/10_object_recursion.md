@@ -47,3 +47,21 @@ Comentarios
 - Me costó entender el genérico porque hay muchos nombres muy abstractos
 
 ### Discusión en clase
+
+Proceso de distribucion de un pedido, que se distribuya en una esctructura
+mediante delegación polimorfica.
+
+- Métodos que continuan la recursión
+- Métodos que hacen de caso base, porque el resultado de trivial o directo.
+
+A diferencia de las recursiones procedurales, lo hacemos a nivel objeto y no
+función.
+
+### Ejemplo
+
+```text
+n! = 1              si n < 2
+     (n - 1)! * n   si n > 1
+```
+
+Hay dos ifs
