@@ -40,3 +40,11 @@ Para discutir en clase:
 
   Si singleton es malo, no es costoso estar creando todo el tiempo objetos
   nuevos? Cómo se suele hacer?
+
+Discusión en clase:
+
+Hernan: lo que conviene es que el contexto cambie el estado, poorque sino los
+estados estan acoplados y rompes el encapsulamiento del contexto. Hay pocas
+situaciones en donde es muy complejo y tal vez conviene que lo haga el estado.
+
+La solución 1a de stack se hace con este patrón.
