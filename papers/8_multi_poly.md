@@ -14,7 +14,7 @@ pueda resolverlo.
 
 > esto ya lo estuvimos viendo con los ejercicios que estuvimos haciendo.
 
-## Problmea
+## Problema
 
 Cuando tenemos mas de una variable que es independientemente polimorfica.
 
@@ -30,7 +30,7 @@ Ejemplo:
 
 Solucion naive:
 
-```
+```text
 Rectangle >> displayOn: aPort
 
   aPort isMemberOf: DisplayPort
@@ -62,7 +62,6 @@ Bitmap >> displayOn: aPort
 El rectangulo puede mandar `displayRectangle` porque sabe quien es si mismo.
 Idem bitmap. Mandan un mensaje dando la información del tipo que son ellos.
 Y del lado de los display ports,
-
 
 ```smalltalk
 DisplayPort >> dispayRectangle: aRect

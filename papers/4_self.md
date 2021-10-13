@@ -28,7 +28,7 @@ Principios de diseño:
   - No hay clases ni variables, su rol lo puede ocupar cualquier objeto
   - No hay distinción entre acceder a una variable y mandar un mensaje
   - Los objetos, procedures y closures son iguales representando a closures y
-    procedures como *prototipos* de activation records. 
+    procedures como *prototipos* de activation records.
 
 - **Concreteness**: Una metáfora cuyos elementos son tan concretos como es
   posible.

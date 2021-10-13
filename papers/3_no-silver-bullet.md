@@ -9,7 +9,7 @@ Papers:
 ## No silver bullet
 
 Address the essential parts of the software task, fashioning abstract conceptual
-structuresof great complexity. Sugiere:
+structures of great complexity. Sugiere:
 
 - Explotar el mercado para evitar construir lo que se puede comprar
 
@@ -111,7 +111,6 @@ esencial.
 
   > The most radical possible solution for constructing software is not to
   construct it at all.
-
   > The key issue, of course, is applicability.
 
 - Requirements
