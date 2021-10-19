@@ -146,3 +146,26 @@ a.k.a wrapper
 access to it.
 
 (surrogate = sustituto)
+
+## Composite
+
+(object structural)
+
+- Intent: Componer objetos en estructuras de árbol para representar jerarquías
+  *part-whole* (que es esto?). Permite que los clientes traten a objetos
+  individuales y composiciones de objetos de forma uniforme.
+
+- Motivation: Graphical software que tiene primitivas (lineas, rectangulos
+  ,texto) y cosas que se componen de primitivas y otras cosas, como Picture.
+
+  ![](img/composite-motivation.png)
+
+  > Duda: no es raro tener GetChild y que las primitivas respondan eso?
+
+  La solución es tener una superclase que todos (los compuestos y los
+  primitivos) formen parte. De esa forma se pueden componer recursivamente.
+
+  > Duda: dice que puede proveer comportamiento por default pero va en contra de
+  > lo que hablamos siempre que las clases abstractas tienen que ser 100%
+  > abstractas.
+- 
