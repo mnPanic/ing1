@@ -168,4 +168,81 @@ access to it.
   > Duda: dice que puede proveer comportamiento por default pero va en contra de
   > lo que hablamos siempre que las clases abstractas tienen que ser 100%
   > abstractas.
-- 
+
+## Visitor
+
+(behavioral)
+
+- Intent: Representar una operación que se va a ejecutar en los elementos de una
+  estructura de objetos. Permite definir nuevas operaciones sin cambiar las
+  clases de los elementos sobre los cuales opera.
+
+- Motivation
+
+  Por ej si tenes un compilador que produce un AST. Sobre el AST queres hacer
+  pretty printing, type checks, generar codigo, etc. pero queda el código
+  dificil de leer.
+
+  Se pueden encapuslar las operaciones en un objeto **visitor**. Cuando un
+  elemento *acepta* al visitor, le manda un request que encodea la clase. Luego
+  el visitor hace una operación en ese elemento.
+
+- Applicability
+
+  - Una estructura de objetos contiene muchas clases de objetos con diferentes
+    interfaces, y queres hacer operaciones que dependen de sus clases
+
+    > (es como un switch recursivo estructural?)
+  
+  - Muchas operaciones que no tienen nada que ver entre si se tienen que
+    realizar en objetos de una estructura, y querés evitar ensuciarlas con estas
+    operaciones.
+  
+  - No cambia la estructura de los objetos pero si queremos agregar operaciones
+    seguido. Esto es porque si cambia la estructura, tenemos que refactorizar
+    las interfaces de todos los visitors.
+
+- Consecuencias
+
+  - Agregar nuevas operaciones es facil
+  - Se juntan operaciones que tienen que ver y se separan las que no
+  - Agregar nuevos elementos concretos es complicado
+  
+  > So the key consideration in applying the Visitor pattern is whether you are
+  mostly likely to change the algorithm applied over an object structure or the
+  classes of objects that make up the structure. The Visitor class hierarchy can
+  be difficult to maintain when new ConcreteElement classes are added
+  frequently. In such cases, it's probably easier just to define operations on
+  the classes that make up the structure. If the Element class hierarchy is
+  stable, but you are continually adding operations or changing algorithms, then
+  the Visitor pattern will help you manage the changes.
+
+  - Es como una generalización de un iterador para estructuras más complejas.
+
+  - Puede romper encapsulamiento
+
+    > Visitor's approach assumes that the ConcreteElement interface is powerful
+    enough to let visitors do their job. As a result, the pattern often forces
+    you to provide public operations that access an element's internal state,
+    which may compromise its encapsulation.
+
+## Observer
+
+(Behavioural)
+
+- Intent: Definir una dependencia uno a muchos entre objetos de forma tal que
+  cuando uno cambia de estado, todos los que *dependen* de el se actualicen
+  automáticamente.
+  
+- A.k.a: dependents / publish-subscribe
+- Motivation
+
+  Por ej. si hay una planilla en donde hay muchos gráficos, cuando actualizas
+  los datos los gráficos se actualizan automáticamente.
+
+  Hay dos partes: subject y observer. Todos los observers son notificados cuando
+  hay un cambio en el subject, y ellos se sincronizan con el subject.
+
+  Tambien se llama **publish-subscribe**. El subject publica notificaciones, y
+  las envia sin tener que saber quienes son los observadores. Cualqueir número
+  de observadores se puede suscribir para recibir notificaciones.
