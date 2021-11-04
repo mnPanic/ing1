@@ -53,3 +53,6 @@ que tener esta herencia. Ahora está difundido acoplarse a interfaces /
 protocolo.
 
 Singleton: tiene infinitos problemas
+
+- Null object tiende a ser stateless: no tiene sentido que guarde estado algo
+  que no hace nada
