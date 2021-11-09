@@ -89,7 +89,7 @@ Queremos testear la interfaz.
   - createCart: aUser authenticatedWith: aPassword
   - addToCart: id ...: product ...: quantity
   - listCart: id
-  - checkoutCart: id
+  - checkoutCart|: id
   - listPurchases
 
   Nuestros tests tienen que testear este protocolo, y la idea es que no rompamos
