@@ -33,6 +33,8 @@ Computación es sobre entender, inventar y construir sistemas.
 
 ## Libros
 
+Recomendaciones de wilki:
+
 - The early history of smalltalk
 - Historia de lenguajes de programación: HOPL
 - The Innovators
